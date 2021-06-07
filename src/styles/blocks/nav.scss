@@ -22,9 +22,11 @@
     color: $text-color;
     text-decoration: none;
     text-transform: uppercase;
+    transition: color 400ms;
   }
 
   &__link:hover {
+    transition: color 400ms;
     color: $color-blue;
   }
 }

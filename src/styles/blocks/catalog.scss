@@ -1,6 +1,7 @@
 .catalog {
   display: flex;
   flex-wrap: wrap;
+  grid-template-columns: repeat(1,1fr);
   justify-content: space-between;
   width: 944px;
   padding-top: 50px;
