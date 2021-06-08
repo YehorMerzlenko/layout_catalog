@@ -93,12 +93,12 @@
     text-transform: uppercase;
     font-size: 14px;
     transition: background-color 400ms;
+    transition-timing-function: linear;
 
     &:hover {
       border-color: $color-blue;
       background-color: #fff;
       color: $color-blue;
-      transition: background-color 400ms;
     }
   }
 
