@@ -3,14 +3,14 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   justify-content: space-between;
-  // width: 944px;
-  padding-top: 50px;
+  justify-items: center;
+  padding: 50px 40px 0;
 
-  @media (min-width:600px) {
+  @media (min-width:680px) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
   }
-  @media (min-width:800px) {
+  @media (min-width:880px) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2,1fr);
   }
