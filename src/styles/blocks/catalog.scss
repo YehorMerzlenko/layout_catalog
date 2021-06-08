@@ -1,9 +1,19 @@
 .catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 944px;
+  display: grid;
+  grid-template-columns: repeat(2, $cell-width);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
   padding-top: 50px;
+
+  @media (min-width:3*$cell-width) {
+    grid-template-columns: repeat(3, $cell-width);
+    grid-template-rows: repeat(2,1fr);
+  }
+  @media (min-width:4*$cell-width) {
+    grid-template-columns: repeat(4, $cell-width);
+    grid-template-rows: repeat(2,1fr);
+  }
 
   &__card {
     margin-bottom: 50px;
