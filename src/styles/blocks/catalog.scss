@@ -1,17 +1,17 @@
 .catalog {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, $cell-width);
   grid-template-rows: repeat(3, 1fr);
-  justify-content: space-between;
+  justify-content: center;
   justify-items: center;
-  padding: 50px 40px 0;
+  padding-top: 50px;
 
-  @media (min-width:680px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media (min-width:3*$cell-width) {
+    grid-template-columns: repeat(3, $cell-width);
     grid-template-rows: repeat(2,1fr);
   }
-  @media (min-width:880px) {
-    grid-template-columns: repeat(4, 1fr);
+  @media (min-width:4*$cell-width) {
+    grid-template-columns: repeat(4, $cell-width);
     grid-template-rows: repeat(2,1fr);
   }
 
