@@ -3,19 +3,23 @@
   flex-direction: column;
   max-width: 200px;
   height: 403px;
-  padding: 14px;
+  padding: 14px 15px 15px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
 
-  &__image-block {
-    display: flex;
-    width: 160px;
-    height: 134px;
-    margin: 18px auto 40px;
-  }
+  &__image {
+    height: 149px;
+    width: 168px;
+    padding-top: 15px;
+    margin-bottom: 45px;
+    transition-duration: 400ms;
+    transition-timing-function: linear;
 
-  &-image {
-    width: 160px;
+    &:hover {
+      transform: scale(1.2);
+      border: 3px solid #f3f3f3;
+
+    }
   }
 
   &__text-name {
@@ -88,11 +92,14 @@
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
+    transition: background-color 400ms;
+    transition-timing-function: linear;
 
     &:hover {
       border-color: $color-blue;
-      background: #fff;
+      background-color: #fff;
       color: $color-blue;
     }
   }
+
 }

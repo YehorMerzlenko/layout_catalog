@@ -22,6 +22,8 @@
     color: $text-color;
     text-decoration: none;
     text-transform: uppercase;
+    transition: color 400ms;
+    transition-timing-function: linear;
   }
 
   &__link:hover {
